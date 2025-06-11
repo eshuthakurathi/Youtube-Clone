@@ -23,6 +23,7 @@ body{
   border-bottom-width: 1px;
   border-bottom-style: solid;
   border-bottom-color: rgb(226, 226, 226);
+  z-index: 100;
 }
 
 .left-section{
@@ -127,14 +128,55 @@ body{
   height: 24px;
 }
 
+.noti-container{
+  position: relative;
+}
+
+.noti-count{
+  position: absolute;
+  top: -2px;
+  right: -5px;
+  background-color: rgb(163, 5, 5);
+  color: white;
+  font-family: Roboto, Arial;
+  font-size: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  border-radius: 10px;
+}
+
 .user-profile-icon{
   height: 32px;
   border-radius: 16px;
 }
 
+.thumbnail-row{
+  margin-bottom: 12px;
+  position:relative;
+}
+
 .thumbnail {
   width: 100%;
   height: 180px;
+}
+
+.video-time{
+  font-family: Roboto, Arial;
+  font-size: 12px;
+  font-weight: 500;
+  padding-left: 4px;
+  padding-right: 4px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  border-radius: 2px;
+  background-color: black;
+  color: white;
+  position: absolute;
+  bottom: 10px;
+  right: 8px;
+
 }
 
 .video-title {
@@ -155,9 +197,6 @@ body{
   border-radius: 50px;
 }
 
-.thumbnail-row{
-  margin-bottom: 12px;
-}
 
 .video-author , .video-stats{
   font-size: 12px;
