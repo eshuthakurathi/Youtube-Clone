@@ -13,7 +13,7 @@
   </head>
 
   <body>
-    <div class="header">
+    <header class="header">
       <div class="left-section">
         <img class="dot-menu" src="Icons/dots.jpg" />
         <img class="logo-menu" src="Icons/youtube-logo.svg" />
@@ -23,150 +23,271 @@
         <input class="search-bar" type="text" placeholder="Search" />
         <button class="search-button">
           <img class="search-icon" src="Icons/search.svg" />
+          <div class="tooltip">Search</div>
         </button>
         <button class="voice-button">
           <img class="voice-icon" src="Icons/voice-search-icon.svg" />
+          <div class="tooltip">Search with you voice</div>
         </button>
       </div>
 
       <div class="right-section">
-        <img class="upload-icon" src="Icons/upload.svg">
-        <img class="apps-icon" src="Icons/youtube-apps.svg">
+        <div class="upload-container">
+          <img class="upload-icon" src="Icons/upload.svg" />
+          <div class="tooltip">Create</div>
+        </div>
+        <div class="apps-container">
+          <img class="apps-icon" src="Icons/youtube-apps.svg" />
+          <div class="tooltip">YouTube Apps</div>
+        </div>
         <div class="noti-container">
-          <img class="notifications-icon" src="Icons/notifications.svg">
-          <div class="noti-count">
-            6
-          </div>
+          <img class="notifications-icon" src="Icons/notifications.svg" />
+          <div class="tooltip">Notifications</div>
+          <div class="noti-count">6</div>
         </div>
-          <img class="user-profile-icon" src="Profiles/profile.jpg">
+        <img class="user-profile-icon" src="Profiles/profile.jpg" />
       </div>
-    </div>
+    </header>
 
-    <div class="sidebar">
-      sidebar
-    </div>
-
-    <div class="video-grid">
-      <div class="video-preview">
-        <div class="thumbnail-row">
-          <img class="thumbnail" src="thumbnails/RajVijay.png" />
-          <div class="video-time">
-            4:18:48
-          </div>
-        </div>
-        <div class="video-info-grid">
-          <div class="channel-picture">
-            <img class="profile-picture" src="Profiles/rajprfl.jpg" />
-          </div>
-          <div class="video-info">
-            <p class="video-title">
-              Vijay Mallya Podcast: Rise & Downfall Of Kingfisher Airlines,
-              Loand & RCB
-            </p>
-            <p class="video-author">Raj Shamani</p>
-            <p class="video-stats">20M views &#x00b7; 4 days ago</p>
-          </div>
-        </div>
+    <nav class="sidebar">
+      <div class="sidebar-link">
+        <img src="Icons/home.svg" />
+        <div>Home</div>
       </div>
-
-      <div class="video-preview">
-        <div class="thumbnail-row">
-          <img class="thumbnail" src="thumbnails/krsna.webp" />
-          <div class="video-time">
-            3:51
-          </div>
-        </div>
-        <div class="video-info-grid">
-          <div class="channel-picture">
-            <img class="profile-picture" src="Profiles/krsnaprfl.jpg" />
-          </div>
-          <div class="video-info">
-            <p class="video-title">
-              KR$NA - Knock Knock | Prod. by Phenom | Official Music Video
-            </p>
-            <p class="video-author">KRSNA</p>
-            <p class="video-stats">8.3M views &#x00b7; 2 weeks ago</p>
-          </div>
-        </div>
+      <div class="sidebar-link">
+        <img src="Icons/explore.svg" />
+        <div>Explore</div>
       </div>
-
-      <div class="video-preview">
-        <div class="thumbnail-row">
-          <img class="thumbnail" src="thumbnails/hq720.jpg" />
-          <div class="video-time">
-            3:51
-          </div>
-        </div>
-        <div class="video-info-grid">
-          <div class="channel-picture">
-            <img class="profile-picture" src="Profiles/harry.jpg" />
-          </div>
-          <div class="video-info">
-            <p class="video-title">Run your own AI (But Private)!</p>
-            <p class="video-author">Code with Harry</p>
-            <p class="video-stats">104K views &#x00b7; 1 year ago</p>
-          </div>
-        </div>
+      <div class="sidebar-link">
+        <img src="Icons/subscriptions.svg" />
+        <div>Subscriptions</div>
       </div>
-
-      <div class="video-preview">
-        <div class="thumbnail-row">
-          <img class="thumbnail" src="thumbnails/mrbeast.jpg" />
-          <div class="video-time">
-            38:38
-          </div>
-        </div>
-        <div class="video-info-grid">
-          <div class="channel-picture">
-            <img class="profile-picture" src="Profiles/beast.jpeg" />
-          </div>
-          <div class="video-info">
-            <p class="video-title">Last to Leave Their Circle Wins $500,000</p>
-            <p class="video-author">MrBeast</p>
-            <p class="video-stats">149M views &#x00b7; 3 months ago</p>
-          </div>
-        </div>
+      <div class="sidebar-link">
+        <img src="Icons/originals.svg" />
+        <div>Originals</div>
       </div>
-
-      <div class="video-preview">
-        <div class="thumbnail-row">
-          <img class="thumbnail" src="thumbnails/ed.jpg" />
-          <div class="video-time">
-            3:04
-          </div>
-        </div>
-        <div class="video-info-grid">
-          <div class="channel-picture">
-            <img class="profile-picture" src="Profiles/edshee.png" />
-          </div>
-          <div class="video-info">
-            <p class="video-title">
-              Ed Sheeran - Sapphire (Official Music Video)
-            </p>
-            <p class="video-author">Ed Sheeran</p>
-            <p class="video-stats">18M views &#x00b7; 4 days ago</p>
-          </div>
-        </div>
+      <div class="sidebar-link">
+        <img src="Icons/youtube-music.svg" />
+        <div>Youtube Music</div>
       </div>
-
-      <div class="video-preview">
-        <div class="thumbnail-row">
-          <img class="thumbnail" src="thumbnails/nyt.jpg" />
-          <div class="video-time">
-            9:21
-          </div>
-        </div>
-        <div class="video-info-grid">
-          <div class="channel-picture">
-            <img class="profile-picture" src="Profiles/nyt.jpg" />
-          </div>
-          <div class="video-info">
-            <p class="video-title">Indian Families & Andhwishvas</p>
-            <p class="video-author">NOT YOUR TYPE</p>
-            <p class="video-stats">19M views &#x00b7; 1 year ago</p>
-          </div>
-        </div>
+      <div class="sidebar-link">
+        <img src="Icons/library.svg" />
+        <div>Library</div>
       </div>
-    </div>
+    </nav>
+    <main>
+      <section class="video-grid">
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="https://www.youtube.com/watch?v=MdeQMVBuGgY">
+              <img class="thumbnail" src="thumbnails/RajVijay.png" />
+            </a>
+            <div class="video-time">4:18:48</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <a href="https://www.youtube.com/@rajshamani">
+                <img class="profile-picture" src="Profiles/rajprfl.jpg" />
+              </a>
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                <a
+                  class="video-link"
+                  href="https://www.youtube.com/watch?v=MdeQMVBuGgY"
+                >
+                  Vijay Mallya Podcast: Rise & Downfall Of Kingfisher Airlines,
+                  Loand & RCB
+                </a>
+              </p>
+              <p class="video-author">
+                <a
+                  class="channel-link"
+                  href="https://www.youtube.com/@rajshamani"
+                >
+                  Raj Shamani
+                </a>
+              </p>
+              <p class="video-stats">20M views &#x00b7; 4 days ago</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a
+              href="https://www.youtube.com/watch?v=Yo7q7rdRs7U&list=RDYo7q7rdRs7U&start_radio=1"
+            >
+              <img class="thumbnail" src="thumbnails/krsna.webp" />
+            </a>
+            <div class="video-time">3:51</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <a href="https://www.youtube.com/@KRSNAOfficial">
+                <img class="profile-picture" src="Profiles/krsnaprfl.jpg" />
+              </a>
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                <a
+                  class="video-link"
+                  href="https://www.youtube.com/watch?v=Yo7q7rdRs7U&list=RDYo7q7rdRs7U&start_radio=1"
+                >
+                  KR$NA - Knock Knock | Prod. by Phenom | Official Music Video
+                </a>
+              </p>
+              <p class="video-author">
+                <a
+                  class="channel-link"
+                  href="https://www.youtube.com/@KRSNAOfficial"
+                >
+                  KRSNA
+                </a>
+              </p>
+              <p class="video-stats">8.3M views &#x00b7; 2 weeks ago</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="https://www.youtube.com/watch?v=XTXEbVVdde4">
+              <img class="thumbnail" src="thumbnails/hq720.jpg" />
+            </a>
+            <div class="video-time">3:51</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <a href="https://www.youtube.com/@CodeWithHarry">
+                <img class="profile-picture" src="Profiles/harry.jpg" />
+              </a>
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                <a
+                  class="video-link"
+                  href="https://www.youtube.com/watch?v=XTXEbVVdde4"
+                >
+                  Run your own AI (But Private)!
+                </a>
+              </p>
+              <p class="video-author">
+                <a
+                  class="channel-link"
+                  href="https://www.youtube.com/@CodeWithHarry"
+                >
+                  Code with Harry
+                </a>
+              </p>
+              <p class="video-stats">104K views &#x00b7; 1 year ago</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="https://www.youtube.com/watch?v=zajUgQLviwk">
+              <img class="thumbnail" src="thumbnails/mrbeast.jpg" />
+            </a>
+            <div class="video-time">38:38</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <a href="https://www.youtube.com/@MrBeast">
+                <img class="profile-picture" src="Profiles/beast.jpeg" />
+              </a>
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                <a
+                  class="video-link"
+                  href="https://www.youtube.com/watch?v=zajUgQLviwk"
+                  >"> Last to Leave Their Circle Wins $500,000
+                </a>
+              </p>
+              <p class="video-author">
+                <a class="channel-link" href="https://www.youtube.com/@MrBeast">
+                  MrBeast
+                </a>
+              </p>
+              <p class="video-stats">149M views &#x00b7; 3 months ago</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a
+              href="https://www.youtube.com/watch?v=JgDNFQ2RaLQ&list=RDJgDNFQ2RaLQ&start_radio=1"
+            >
+              <img class="thumbnail" src="thumbnails/ed.jpg" />
+            </a>
+            <div class="video-time">3:04</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <a href="https://www.youtube.com/@EdSheeran">
+                <img class="profile-picture" src="Profiles/edshee.png" />
+              </a>
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                <a
+                  class="video-link"
+                  href="https://www.youtube.com/watch?v=JgDNFQ2RaLQ&list=RDJgDNFQ2RaLQ&start_radio=1"
+                >
+                  Ed Sheeran - Sapphire (Official Music Video)
+                </a>
+              </p>
+              <p class="video-author">
+                <a
+                  class="channel-link"
+                  href="https://www.youtube.com/@EdSheeran"
+                >
+                  Ed Sheeran
+                </a>
+              </p>
+              <p class="video-stats">18M views &#x00b7; 4 days ago</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="https://www.youtube.com/watch?v=muYg21EVrZQ">
+              <img class="thumbnail" src="thumbnails/nyt.jpg" />
+            </a>
+            <div class="video-time">9:21</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <a href="https://www.youtube.com/@NOTYOURTYPE">
+                <img class="profile-picture" src="Profiles/nyt.jpg" />
+              </a>
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                <a
+                  class="video-link"
+                  href="https://www.youtube.com/watch?v=muYg21EVrZQ"
+                >
+                  Indian Families & Andhwishvas
+                </a>
+              </p>
+              <p class="video-author">
+                <a
+                  class="channel-link"
+                  href="https://www.youtube.com/@NOTYOURTYPE"
+                >
+                  NOT YOUR TYPE
+                </a>
+              </p>
+              <p class="video-stats">19M views &#x00b7; 1 year ago</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>

@@ -1,5 +1,4 @@
 p{
-  font-family: Roboto,Arial;
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -7,7 +6,10 @@ p{
 body{
   margin: 0;
   padding-top: 80px;
-  padding-left: 80px;
+  padding-left: 96px;
+  padding-right: 24px;
+  background-color: rgb(248, 248, 248);
+  font-family: Roboto, Arial;
 }
 
 .header{
@@ -35,6 +37,7 @@ body{
   height: 40px;
   margin-left: 20px;
   margin-right: 20px;
+  cursor: pointer;
 }
 
 .logo-menu{
@@ -55,16 +58,13 @@ body{
   height: 34px;
   padding-left: 12px;;
   font-size: 17px;
-  border-width: 1px;
-  border-style: solid;
-  border-color: rgb(176, 176, 176);
+  border: 1px solid rgb(176, 176, 176);
   border-radius: 2px;
   box-shadow: inset 1px 2px 3px rgba(0,0,0,0.05);
   width: 0;
 }
 
 .search-bar::placeholder{
-  font-family: Roboto, Arial;
   font-size: 16px;
 }
 
@@ -77,11 +77,52 @@ body{
   border-color: rgb(176, 176, 176);
   margin-left: -1px;
   margin-right: 10px;
+  cursor: pointer;
+}
+
+.search-button ,
+.voice-button,
+.upload-container,
+.apps-container,
+.noti-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+}
+
+.search-button .tooltip,
+.voice-button .tooltip,
+.upload-container .tooltip,
+.apps-container .tooltip,
+.noti-container .tooltip{
+  position: absolute;
+  background-color: gray;
+  color: white;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 8px;
+  padding-right: 8px;
+  border-radius: 2px;
+  font-size: 12px;
+  bottom: -40px;
+  opacity: 0;
+  transition: opacity 0.15s;
+  pointer-events: none;
+  white-space: nowrap;
+}
+
+.search-button:hover .tooltip,
+.voice-button:hover .tooltip,
+.upload-container:hover .tooltip,
+.apps-container:hover .tooltip,
+.noti-container:hover .tooltip{
+  opacity: 1;
 }
 
 .search-icon{
   height: 26px;
-  margin-top: 4px;
 }
 
 .voice-button{
@@ -90,11 +131,11 @@ body{
   border-radius: 20px;
   border: none;
   background-color: rgb(245, 245, 245);
+  cursor: pointer;
 }
 
 .voice-icon{
   height: 24px;
-  margin-top: 4px;
 }
 
 .right-section{
@@ -113,23 +154,50 @@ body{
   top: 55px;
   background-color: white;
   width: 72px;
+  z-index: 200;
+  padding-top: 5px;
+}
+
+.sidebar-link{
+  height: 74px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.sidebar-link:hover{
+  background-color: rgb(235, 235, 235);
+}
+
+.sidebar-link img{
+  height: 25px;
+  margin-bottom: 4px;
+}
+
+.sidebar-link div{
+  font-size: 10px;
 }
 
 .upload-icon{
   height: 24px;
+  cursor: pointer;
 }
 
 .apps-icon{
   height: 24px;
-
+  cursor: pointer;
 }
 
 .notifications-icon{
   height: 24px;
+  cursor: pointer;
 }
 
 .noti-container{
   position: relative;
+  cursor: pointer;
 }
 
 .noti-count{
@@ -138,7 +206,6 @@ body{
   right: -5px;
   background-color: rgb(163, 5, 5);
   color: white;
-  font-family: Roboto, Arial;
   font-size: 10px;
   padding-left: 5px;
   padding-right: 5px;
@@ -150,26 +217,29 @@ body{
 .user-profile-icon{
   height: 32px;
   border-radius: 16px;
+  cursor: pointer;
 }
 
 .thumbnail-row{
-  margin-bottom: 12px;
+  margin-bottom: 8px;
   position:relative;
 }
 
 .thumbnail {
   width: 100%;
-  height: 180px;
+  height: 200px;
+}
+
+.video-link{
+  text-decoration: none;
+  color: black;
+  box-sizing: border-box;
 }
 
 .video-time{
-  font-family: Roboto, Arial;
   font-size: 12px;
   font-weight: 500;
-  padding-left: 4px;
-  padding-right: 4px;
-  padding-top: 4px;
-  padding-bottom: 4px;
+  padding: 4px;
   border-radius: 2px;
   background-color: black;
   color: white;
@@ -184,7 +254,7 @@ body{
   font-size: 14px;
   font-weight: 500;
   line-height: 20px;
-  margin-bottom: 12px;
+  margin-bottom: 10px;
 }
 
 .video-info-grid{
@@ -192,8 +262,33 @@ body{
   grid-template-columns: 50px 1fr;
 }
 
+.video-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; 
+  column-gap: 16px;
+  row-gap: 40px;
+}
+
+@media (max-width: 750px) {
+  .video-grid{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 751px) and (max-width:999px) {
+  .video-grid{
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (min-width: 1000px){
+  .video-grid{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
 .profile-picture {
-  width: 40px;
+  width: 36px;
   border-radius: 50px;
 }
 
@@ -203,14 +298,14 @@ body{
   color: rgb(96,96,96);
 }
 
+.channel-link{
+  font-family: Roboto, Arial;
+  text-decoration: none;
+  color: rgb(96,96,96);
+}
+
 .video-author{
   margin-bottom: 4px;
 }
 
-.video-grid{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr; 
-  column-gap: 16px;
-  row-gap: 40px;
-}
 
