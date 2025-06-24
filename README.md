@@ -21,15 +21,9 @@ This project replicates the visual layout of YouTube to understand the fundament
 - Replicating real-world UI using pure front-end tools
 - Planning responsive elements for multiple screen sizes
 
-## 🚀 Live Preview
-> (Coming soon if deployed via Netlify/Vercel)
 
 ## 📂 Project Status
 The project is in a basic but functional state. Additional improvements like interactivity, search functionality, and mobile responsiveness are planned.
 
-## 📸 Screenshot  
-> (Add a screenshot here if you like)
-
----
 
 *Made with ❤ by [Eshu Thakurathi](https://github.com/eshuthakurathi)*
